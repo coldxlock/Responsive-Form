@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequência / Avaliação da Aula</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Frequência / Avaliação da Aula</h1>
+        <!-- <p>Have any questions or suggestions? Drop us a message</p> -->
+        <form>
+            <div class="row">
+                <div class="column">
+                    <label for="name">Matrícula</label>
+                    <input type="text" id="name" placeholder="" required>
+                </div>
+                <div class="column">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="" required>
+                </div>               
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="subject">Curso</label>
+                    <br>
+                    <select id="subject" name="" id="">                        
+                        <option value="">Sistemas Informação</option>
+                        <option value="">Ciências Contabéis</option>
+                    </select>
+                    
+                    <div class="column">
+                        <label for="name">Disciplina</label>
+                        <input type="text" id="name" placeholder="" required>
+                    </div>  
+                </div>
+                
+            </div>
+            <h3>AVALIAÇÃO DA DISCIPLINA</h3>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="issue">O DESAFIO PROPOSTO PELO PROFESSOR PARA A AULA TEVE RELAÇÃO 
+                    COM O CONTEÚDO MINISTRADO? *</label>                    
+                    <label class="container-radio">
+                        SIM
+                        <input type="radio"  name="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">
+                        NÃO
+                        <input type="radio" name="radio" >
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="issue">DESTAQUE OS PONTOS PRINCIPAIS COMPREENDIDOS POR VOCÊ NA AULA DE HOJE. *</label>
+                    <label class="container-radio">
+                        SIM
+                        <input type="radio"  name="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">
+                        NÃO
+                        <input type="radio" name="radio" >
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="issue">O DIÁLOGO RELACIONADO AO DESAFIO PROPOSTO PARA A AULA LHE INSERIU JUNTO AO CONTEÚDO 
+                    PROPOSTO DE FORMA SIGNIFICATIVA? *</label>
+                    <textarea id="issue" required placeholder="Sua resposta" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="issue">O OBJETIVO (APRESENTAÇÃO) APRESENTADO PELO PROFESSOR NA AULA FOI ALCANÇADO? *</label>
+                    <label class="container-radio">
+                        SIM
+                        <input type="radio"  name="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">
+                        NÃO
+                        <input type="radio" name="radio" >
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="column">
+                    <label for="issue">A METODOLOGIA UTILIZADA NA AULA DE HOJE FOI SATISFATÓRIA PARA COMPREENDER, APROFUNDAR E APLICAR O CONTEÚDO? *</label>
+                    <label class="container-radio">
+                        SIM
+                        <input type="radio"  name="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">
+                        NÃO
+                        <input type="radio" name="radio" >
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="issue">COMO VOCÊ AVALIA A AULA DE HOJE? *</label>
+                    <label class="container-radio">
+                        SATISFATÓRIA
+                        <input type="radio"  name="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">
+                        NÃO SATISFATÓRIA
+                        <input type="radio" name="radio" >
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="issue">O PROFESSOR LANÇOU O DESAFIO PARA A AULA SEGUINTE? SE A RESPOSTA FOR SIM, QUAL FOI O DESAFIO? *</label>
+                    <textarea id="issue" required placeholder="Sua resposta" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="issue">DESTAQUE OS PONTOS PRINCIPAIS COMPREENDIDOS POR VOCÊ NA AULA DE HOJE. *</label>
+                    <textarea id="issue" required placeholder="Sua resposta" rows="3"></textarea>
+                </div>
+            </div>
+            <button style="cursor: pointer;">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
