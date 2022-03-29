@@ -38,12 +38,14 @@ body{
     width: 70%;
     min-width: 420px;
     padding: 35px 50px;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    left: 50%;
-    top: 128%;
+    /* transform: translate(-50%,-50%); */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 128%; */
     border-radius: 10px;
     box-shadow: 20px 30px 25px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    margin-top: 3%;
 }
 h1{
     font-size: 30px;
@@ -170,3 +172,12 @@ button{
       background: white;
   }
   
+
+/* salvo com sucesso */
+.salvo {
+    border-radius: 18px;
+    border: 1px solid #33bc41;
+    color: #33bc41;
+    padding: 10px 0;
+    margin-top: 20px;
+}
