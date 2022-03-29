@@ -9,12 +9,30 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(
+    /* background: linear-gradient(
         135deg,
         #6f6df4,
         #4c46f5
-    );
+    ); */
+
+    /* background: linear-gradient( 135deg, #e9f5f5, #c0eef2 );
+    background: 
+        linear-gradient(
+            135deg,
+            #2f47be,
+            #c0eef2
+        ); */
+    background-color: #6df494;
 }
+
+.select {
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    height: 37px;
+    margin-top: 6px;    
+    width: 100%;
+}
+
 .container{
     background-color: #ffffff;
     width: 70%;

@@ -29,7 +29,7 @@
                     <label for="subject">Curso</label>
                     <br>
                     <select id="subject"  name="curso" id="" required class="select">                        
-                        <option value="">Selecione uma empresa</option>
+                        <option value="">Selecione um curso</option>
                         <option value="direito">Direito</option>
                         <option value="Psicologia">Psicologia</option>
                         <option value="Pedagogia">Pedagogia</option>
