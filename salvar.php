@@ -1,6 +1,10 @@
 <?php 
 	date_default_timezone_set('America/Sao_Paulo');
+	
 
+	require_once 'config.php';
+
+	
 	foreach ($_POST as $key => $post) {
 		$new_post[$key] = str_replace("'","",str_replace('"',"",$post));
 		
@@ -21,13 +25,14 @@
 	
 	
 
-	$conexao_bd = new mysqli("localhost",
-	"root","","frequencia_aluno") or die("Erro ao conectar com o bd");
+	
 	
 	$sql = "INSERT INTO 
 	feedback(
 		nome , 
 		matricula , 
+		disciplina , 
+		curso , 
 		pergunta1 , 
 		pergunta2 , 
 		pergunta3 , 
@@ -41,6 +46,8 @@
 	VALUES(
 		'$nome' , 
 		'$matricula' , 
+		'$disciplina' , 
+		'$curso' , 
 		'$pergunta1' , 
 		'$pergunta2' , 
 		'$pergunta3' , 
@@ -61,10 +68,11 @@
 	$result = mysqli_query($conexao_bd, $sql) ;
 	
 	if ($result){
-		echo "Salvo com sucesso!";
+		echo "<h1>Processando...</h1>";
+		header("refresh:0, msg-sucesso.php");
 	} else {
 		echo "Houve um erro";
 	}
-	header("refresh:0, msg-sucesso.php");
+	
 ?>
 
